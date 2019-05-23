@@ -1,0 +1,14 @@
+<h1>Lista de peliculas</h1>
+
+
+<div class="movies-wrapper">
+    {{#each movies}}
+    <div class="movie-item">
+        <img src="{{this.imgPath}}" alt="">
+        <h4>{{this.title}}</h4>
+        <p><strong>Descripción:</strong> {{this.description}}</p>
+    </div>
+    {{else}}
+    <p>No existen películas que mostrar. ¿Quieres <a href="/movies/add">crear una película ahora</a>?</p>
+    {{/each}}
+</div>

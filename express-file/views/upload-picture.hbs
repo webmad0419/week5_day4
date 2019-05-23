@@ -1,0 +1,12 @@
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+
+<hr>
+<section>
+  <h2>Upload your photo</h2>
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="text" name="imagename"><br>
+    <input type="file" name="photo"><br>
+    <input type="submit" value="Save">
+  </form>
+</section>
